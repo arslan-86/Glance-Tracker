@@ -6,8 +6,10 @@ JEELIZGLANCETRACKER.init({
    // it can be used to play/pause a video
    callbackTrack: function(isWatching){
      if (isWatching){
+        document.getElementById("demo").innerHTML = "You are watching!";
        console.log('Hey, you are watching bro');
      } else {
+        document.getElementById("demo").innerHTML = "Your are not watching!";
        console.log('You are not watching anymore :(');
      }
    },
